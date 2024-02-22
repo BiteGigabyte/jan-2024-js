@@ -54,4 +54,3 @@ let agePrompt = prompt('Вкажіть ваш вік:', '27');
 let personPrompt = `${firstNamePrompt} ${middleNamePrompt}. ${agePrompt} років.`;
 //
 console.log(personPrompt);
-
