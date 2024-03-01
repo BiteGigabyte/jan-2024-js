@@ -139,12 +139,31 @@ function sum (arr) {
 console.log('Task 11: ' + sum([1, 2, 10]));
 
 
-// - створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відаовідних індексах
+// - створити функцію swap(arr,index1,index2). Функція міняє місцями значення у відповідних індексах
 // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
 //
-
+function swap (arr,index1,index2) {
+    const i1 = arr[index1];
+    arr[index1] = arr[index2];
+    arr[index2] = i1;
+    return arr;
+}
+console.log('Task 12:');
+console.log(swap([11, 22, 33, 44], 0, 1));
 
 
 // - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 // Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
 //
+function exchange(sumUAH, currencyValues, exchangeCurrency) {
+
+    for (const currencyValuesElement of currencyValues) {
+        switch (currencyValuesElement.currency) {
+            case exchangeCurrency:
+                return sumUAH / currencyValuesElement.value;
+                // break;
+        }
+    }
+}
+console.log('Task 13: ');
+console.log(exchange(10000, [{currency: 'USD', value: 40}, {currency: 'EUR', value: 42}], 'USD'));
