@@ -182,3 +182,41 @@ console.log(car2);
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
 //
 //
+class Cinderella {
+    constructor(name, age, footSize) {
+        this.name = name;
+        this.age = age;
+        this.footSize = footSize;
+    }
+}
+//
+let cinderella = [];
+//
+for (let i = 1; i < 11; i++) {
+    cinderella.push(new Cinderella(`Cinderella${i}`, 18 + i, 33 + i));
+}
+//
+console.log(cinderella);
+//
+class Prince {
+    constructor(name, age, slipper) {
+        this.name = name;
+        this.age = age;
+        this.slipper = slipper;
+    }
+}
+//
+let prince = new Prince('Prince', 27, 37);
+console.log(prince);
+//
+//
+for (let i = 0; i < cinderella.length; i++) {
+    switch (cinderella[i].footSize) {
+        case prince.slipper:
+            console.log(cinderella[i]);
+            break;
+    }
+}
+//
+//
+console.log(cinderella.find(value => value.footSize === prince.slipper));
