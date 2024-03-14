@@ -1,0 +1,45 @@
+.bodyMainDiv {
+    width: 98%;
+}
+
+.bodyMainDivBlock {
+    width: 100%;
+    border: 2px solid red;
+    padding-left: 10px;
+    margin: 7px 0;
+}
+
+.bodyMainDivBlockH3 {
+    width: 97%;
+    border: 2px solid #054382;
+    padding-left: 5px;
+}
+
+.bodyMainDivBlockH4Month {
+    display: inline-block;
+    width: 28%;
+    border: 2px solid #054382;
+    margin-right: 10px;
+    padding-left: 5px;
+}
+
+.bodyMainDivBlockH4Hour {
+    display: inline-block;
+    width: 66%;
+    border: 2px solid #054382;
+    padding-left: 5px;
+}
+
+.bodyMainDivBlockUl {
+    border: 2px solid #054382;
+    list-style-type: none;
+    width: 93%;
+    padding: 10px 10px;
+}
+
+.bodyMainDivBlockUlLi {
+    border: 2px solid #054382;
+    width: 98%;
+    margin: 10px 0;
+    padding-left: 5px;
+}
