@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lsn10_HW_JS</title>
+
+</head>
+<body>
+<div id="userDiv">
+    <h2><u>Task 1</u></h2>
+    <form action="" name="userForm">
+        <label>
+            <input type="text" name="userFormName" value="name">
+        </label>
+        <label>
+            <input type="text" name="userFormSurname" value="surname">
+        </label>
+        <label>
+            <input type="number" name="userFormAge" value="21">
+        </label>
+        <button name="userFormButton">Відправити</button>
+    </form>
+    <div id="userDivBlock"></div>
+</div>
+
+
+<div id="task2Div">
+    <h2><u>Task 2</u></h2>
+    <h3 id="task2DivH3">1</h3>
+</div>
+
+<div id="task3Div">
+    <h2><u>Task 3</u></h2>
+    <a id="task3DivIndex" href="index.html" style="display: block">Сторінка index.html;</a>
+    <a id="task3DivSession" href="sessions.html" style="display: block">Деталі сесій. Сторінка sessions.html;</a>
+</div>
+
+<div id="task4Block">
+    <h2><u>Task 4</u></h2>
+    <div id="task4BlockDiv"></div>
+    <button id="task4BlockDivPrev">Prev</button>
+    <button id="task4BlockDivNext">Next</button>
+    <hr>
+</div>
+
+<div id="task5Block">
+    <h2><u>Task 5</u></h2>
+    <h3 id="text"><b>BLOCK ELEMENT</b></h3>
+    <button id="task5BlockButton">Hide</button>
+    <hr>
+</div>
+
+<div id="task6Block">
+<h2><u>Task 6</u></h2>
+    <label><input name="task6BlockInput" type="number" value="17">
+    <button id="task6BlockButton">Перевірити вік</button>
+    </label>
+    <div id="task6BlockDiv"></div>
+    <hr>
+</div>
+
+<div id="task7Block">
+    <h2><u>Task 7</u></h2>
+    <label>
+        <input name="task7lockInputRows" type="number" value="14">
+        <input name="task7lockInputColumn" type="number" value="5">
+        <input name="task7lockInputData" type="text" value="Hello Okten!">
+        <button id="task7BlockInputButton">Створити таблицю</button>
+    </label>
+</div>
+
+<div id="task8Block">
+    <h2><u>Task 8</u></h2>
+    <h4 id="task8BlockH4">100 грн.</h4>
+</div>
+<hr>
+<hr>
+
+<button onclick="(function clearStorage() {
+  localStorage.clear();
+})()">ОЧИСТИТИ LOCAL STORAGE</button>
+<script src="lsn_10_hw.js"></script>
+</body>
+</html>
